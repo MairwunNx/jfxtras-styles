@@ -47,6 +47,11 @@
  ******************************************************************************/
 
 .button, .toggle-button {
+    -shrink-animate-on-press: true;
+}
+
+
+.button, .toggle-button {
     -fx-padding: 0.25em 1.666666em 0.25em 1.666666em; /*3 20 3 20*/
 
     -fx-border-color: transparent;
@@ -90,6 +95,10 @@
 
 /****************************** Button ****************************************/
 
+.button {
+    -fx-skin: "impl.jfxtras.styles.jmetro8.FluentButtonSkin";
+}
+
 .button:default
 {
     -fx-background-color: accent_color;
@@ -105,6 +114,10 @@
 }
 
 /**************************** Toggle Button ***********************************/
+
+.toggle-button {
+    -fx-skin: "impl.jfxtras.styles.jmetro8.FluentToggleButtonSkin";
+}
 
 .toggle-button:selected {
     -fx-background-color: accent_color;
